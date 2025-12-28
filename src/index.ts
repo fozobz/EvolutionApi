@@ -22,8 +22,9 @@ server.listen (8080, () =>  {
     console.log("Server runnin on http://localhost:8080/");
 })
 
-const MONGO_URL = ;
+const MONGO_URL = 'mongodb+srv://fozobz:5O9MxtGgtfi46izg@evolutionapidb.5k9gj7g.mongodb.net/?appName=EvolutionApiDB';
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on('error', (error:Error) => console.log('error'));
+
